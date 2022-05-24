@@ -2,234 +2,230 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
-    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="icon" type="image/x-icon" href="/images/Favicon.png">
-  <title>Jeni</title>
-
-  <style>
-    .constuction{
-      height: 250px;
-    }
-
-    @media (max-width: 950px) {
-      .constuction{
-        height: unset;
-      }
-      .constuction1{
-        display: flex;
-        flex-direction: column-reverse;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Eo_circle_purple_letter-j.svg/1024px-Eo_circle_purple_letter-j.svg.png">
+    <link rel="stylesheet" href="/components/style.css">
+    <title>Jeni</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid d-flex flex-row-reverse">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid d-flex flex-row-reverse">
+            <button class="navbar-toggler" type="button" onclick="new bootstrap.Collapse(document.getElementById('navBarDropDown'));">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <span class="navbar-toggler-icon"></span>
-      </button>
+            <div class="collapse navbar-collapse" id="navBarDropDown">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
 
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="/contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <div class="container-fluid">
-    <div class="row row-cols-1 row-cols-lg-2 constuction1">
-      <div class="col col-lg-7" style="overflow-y: scroll;">
-        <div class="d-flex flex-column constuction">
-          <div class="fs-5 m-auto text-center pt-3">
-            <h1>Jeni Shamailovi</h1>
-
-            Economist and Model
-          </div>
-
-          <div class="container my-3">
-            <div class="fs-3">My Portfolio</div>
-
-            <div class="pt-2 border-top border-1">
-              <div class="row">
-                <div class="col">
-                  <img class="w-100" src="/images/Jeni1.jpg" alt="Jeni">
-                </div>
-                <div class="col">
-                  <img class="w-100" src="/images/Jeni2.jpg" alt="Jeni">
-                </div>
-              </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact</a>
+                    </li>
+                </ul>
             </div>
-          </div>
-
-          <div class="container my-3">
-            <div class="fs-2">About</div>
-
-            <div class="py-3 border-top border-1">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit iure vero laudantium odit magnam modi
-              commodi, architecto quibusdam nulla voluptate inventore esse quisquam eveniet, id ipsum culpa, eum quam
-              et. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus deleniti esse distinctio in, rem
-              aperiam modi cupiditate, perspiciatis maiores est ipsa aut ratione omnis itaque laboriosam quidem autem,
-              reprehenderit explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptate, non
-              deserunt sequi, laboriosam possimus rerum corporis veniam repudiandae quidem tenetur eius, nesciunt harum.
-              Maiores, quis aliquid! Deleniti, quibusdam optio!
-              Voluptate neque accusamus impedit, dolor libero temporibus ducimus velit sapiente nulla autem rem est iste
-              totam saepe! Repudiandae doloremque quasi aut, et expedita ea veritatis aperiam sit aliquam earum harum.
-            </div>
-          </div>
-
-          <div class="container my-3">
-            <div class="fs-2">My Skills</div>
-
-            <div class="py-3 border-top border-1">
-              <ul>
-                <li>Kant's Academy (Business)</li>
-                <div class="progress my-2">
-                  <div class="progress-bar" role="progressbar" style="width: 85%; background-color: blueviolet;"
-                    aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
-                </div>
-
-                <li>Kant's Academy (Couching)</li>
-                <div class="progress my-2">
-                  <div class="progress-bar" role="progressbar" style="width: 65%; background-color: rgb(255, 0, 195);"
-                    aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
-                </div>
-                
-                <li>Digital Institute (It Programming)</li>
-                <div class="progress my-2">
-                  <div class="progress-bar" role="progressbar" style="width: 80%; background-color: cyan;"
-                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
-                </div>
-              </ul>
-            </div>
-          </div>
-
-          <div class="container my-3">
-            <div class="fs-2">Education</div>
-
-            <div class="py-3 border-top border-1">
-              <div class="row row-cols-1">
-                <div class="col">
-                  <div class="card mb-3" style="max-width: 540px;">
-                    <div class="row g-0">
-                      <div class="col-md-4">
-                        <img src="/images/Public school.jpeg" class="img-fluid rounded-start" alt="...">
-                      </div>
-
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title">Public School</h5>
-
-                          <p class="card-text">Graduated from №146 Public School</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div class="card mb-3" style="max-width: 540px;">
-                    <div class="row g-0">
-                      <div class="col-md-4">
-                        <img src="/images/Cu.jpeg" class="img-fluid rounded-start" alt="...">
-                      </div>
-
-                      <div class="col-md-8">
-                        <div class="card-body">
-                          <h5 class="card-title">Caucasus University</h5>
-
-                          <p class="card-text">Student of CSE School</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="container my-3">
-            <div class="fs-2">Contact Me</div>
-
-            <div class="py-3 border-top border-1">
-              <div class="row row-cols-1">
-                <div class="col d-flex flex-row my-2">
-                  <i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right fs-2"></i>
-
-                  <div>Tbilisi,Georgia</div>
-                </div>
-
-                <div class="col d-flex flex-row my-2">
-                  <i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right fs-2"></i>
-
-                  <div>
-                    <a href="tel:+995555989198">
-                      +995555989198
-                    </a>
-                  </div>
-                </div>
-
-                <div class="col d-flex flex-row my-2">
-                  <i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right fs-2"></i>
-
-                  <div>
-                    <a href="mail:jeni1.shamailova1@gmail.com">
-                      jeni1.shamailova1@gmail.com
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
+    </nav>
 
-      <div class="col col-lg-5 px-0">
-        <img class="w-100" src="/images/Jeni.jpg" alt="Jeni">
-      </div>
+    <div class="container-fluid">
+        <div class="row constuction1">
+            <div class="col col-lg-7 scrollable">
+                <div class="d-flex flex-column constuction">
+                    <div class="fs-5 m-auto text-center pt-3">
+                        <h1>Jeni Shamailovi</h1>
+
+                        Economist and Model
+                    </div>
+
+                    <div class="container my-3">
+                        <div class="fs-3">My Portfolio</div>
+
+                        <div class="pt-2 border-top border-1">
+                            <div class="row">
+                                <div class="col">
+                                    <img class="w-100 galleryItem" src="https://scontent.ftbs3-1.fna.fbcdn.net/v/t1.6435-9/108209307_759955708155039_6793706718165922949_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=174925&_nc_eui2=AeGOWFLSjejgk0sujUj6QzkXu7JlssR4sda7smWyxHix1oSyl9JYGmNTBXul_PKkmuEEf-JbOPLSrNO9w-SGUIF5&_nc_ohc=B1ki8GxRTXIAX87ePij&_nc_ht=scontent.ftbs3-1.fna&oh=00_AT-aL3r3sso3pEmx0kvwoJ9vzp6PtXTBl8PMCVcYGfZZZg&oe=62B16892" alt="Jeni">
+                                </div>
+                                <div class="col">
+                                    <img class="w-100 galleryItem" src="https://scontent.ftbs3-2.fna.fbcdn.net/v/t1.6435-9/109529435_760949694722307_3116799015071626365_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeF-5fdF6Ts5wBMd3ee-3Giwu6KABArtBnm7ooAECu0Geaw4Pj6B1j76883yW6mKFkIEO4X0JZ7dZRK-1dmXq7Kj&_nc_ohc=GOwdh1IaWuUAX_NJIyG&_nc_ht=scontent.ftbs3-2.fna&oh=00_AT-vUcKCGzHL7cZNa92fVNP32VJYMtHvRj9mVMkdjsRauw&oe=62B3909B" alt="Jeni">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container my-3">
+                        <div class="fs-2">About</div>
+
+                        <div class="py-3 border-top border-1">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit iure vero laudantium odit
+                            magnam modi
+                            commodi, architecto quibusdam nulla voluptate inventore esse quisquam eveniet, id ipsum
+                            culpa, eum quam
+                            et. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus deleniti esse
+                            distinctio in, rem
+                            aperiam modi cupiditate, perspiciatis maiores est ipsa aut ratione omnis itaque laboriosam
+                            quidem autem,
+                            reprehenderit explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                            voluptate, non
+                            deserunt sequi, laboriosam possimus rerum corporis veniam repudiandae quidem tenetur eius,
+                            nesciunt harum.
+                            Maiores, quis aliquid! Deleniti, quibusdam optio!
+                            Voluptate neque accusamus impedit, dolor libero temporibus ducimus velit sapiente nulla
+                            autem rem est iste
+                            totam saepe! Repudiandae doloremque quasi aut, et expedita ea veritatis aperiam sit aliquam
+                            earum harum.
+                        </div>
+                    </div>
+
+                    <div class="container my-3">
+                        <div class="fs-2">My Skills</div>
+
+                        <div class="py-3 border-top border-1">
+                            <ul>
+                                <li>Kant's Academy (Business)</li>
+                                <div class="progress my-2">
+                                    <div class="progress-bar" role="progressbar"
+                                        style="width: 85%; background-color: blueviolet;" aria-valuenow="85"
+                                        aria-valuemin="0" aria-valuemax="100">85%</div>
+                                </div>
+
+                                <li>Kant's Academy (Couching)</li>
+                                <div class="progress my-2">
+                                    <div class="progress-bar" role="progressbar"
+                                        style="width: 65%; background-color: rgb(255, 0, 195);" aria-valuenow="65"
+                                        aria-valuemin="0" aria-valuemax="100">65%</div>
+                                </div>
+
+                                <li>Digital Institute (It Programming)</li>
+                                <div class="progress my-2">
+                                    <div class="progress-bar" role="progressbar"
+                                        style="width: 80%; background-color: cyan;" aria-valuenow="80" aria-valuemin="0"
+                                        aria-valuemax="100">80%</div>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="container my-3">
+                        <div class="fs-2">Education</div>
+
+                        <div class="py-3 border-top border-1">
+                            <div class="row row-cols-1">
+                                <div class="col">
+                                    <div class="card mb-3">
+                                        <div class="row g-0">
+                                            <div class="col-md-4">
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Greater_coat_of_arms_of_Georgia.svg/1200px-Greater_coat_of_arms_of_Georgia.svg.png" class="img-fluid rounded-start">
+                                            </div>
+
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Public School</h5>
+
+                                                    <p class="card-text">Graduated from №146 Public School</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="card mb-3">
+                                        <div class="row g-0">
+                                            <div class="col-md-4">
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/CaLogo.jpg" class="img-fluid rounded-start" alt="...">
+                                            </div>
+
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Caucasus University</h5>
+
+                                                    <p class="card-text">Student of CSE School</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container my-3">
+                        <div class="fs-2">Contact Me</div>
+
+                        <div class="py-3 border-top border-1">
+                            <div class="row row-cols-1">
+                                <div class="col d-flex flex-row my-2">
+                                    <i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right fs-2"></i>
+
+                                    <div>Tbilisi,Georgia</div>
+                                </div>
+
+                                <div class="col d-flex flex-row my-2">
+                                    <i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right fs-2"></i>
+
+                                    <div>
+                                        <a href="tel:+995555989198">
+                                            +995555989198
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col d-flex flex-row my-2">
+                                    <i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right fs-2"></i>
+
+                                    <div>
+                                        <a href="mail:jeni1.shamailova1@gmail.com">
+                                            jeni1.shamailova1@gmail.com
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-lg-5 px-0">
+                <img class="w-100" src="https://scontent.ftbs3-2.fna.fbcdn.net/v/t1.6435-9/109110151_760949684722308_6527559831596709116_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeFz5zYsD4MokAn_d2OaIcpqFZuwtjMe2E0Vm7C2Mx7YTaGRI5XfLxuVQuG4nKUbwg8eNjZ4IJoExHaqLooFh2SH&_nc_ohc=SEuXF9S0VjIAX_dOjlm&_nc_ht=scontent.ftbs3-2.fna&oh=00_AT_oc3su2BAZ6UomAoKyRQFl4lifrB3mv_TxQueVVW7dPw&oe=62B482D8" alt="Jeni">
+            </div>
+        </div>
     </div>
-  </div>
 
-  <footer style="background-color: grey;">
-    <div class="d-flex flex-row py-5 text-white">
-      <div class="m-auto">
-        <a class="text-decoration-none text-white" href="https://www.facebook.com/jeni.shamailova" target="_blank">
-          <i class="fa fa-facebook-official w3-hover-opacity fs-3 mx-2"></i>
-        </a>
+    <footer>
+        <div class="d-flex flex-row py-5 text-white">
+            <div class="m-auto">
+                <a class="text-decoration-none text-white" href="https://www.facebook.com/jeni.shamailova"
+                    target="_blank">
+                    <i class="fa fa-facebook-official w3-hover-opacity fs-3 mx-2"></i>
+                </a>
 
-        <a class="text-decoration-none text-white" href="https://www.instagram.com/jenishamailova/" target="_blank">
-          <i class="fa fa-instagram w3-hover-opacity fs-3 mx-2"></i>
-        </a>
+                <a class="text-decoration-none text-white" href="https://www.instagram.com/jenishamailova/"
+                    target="_blank">
+                    <i class="fa fa-instagram w3-hover-opacity fs-3 mx-2"></i>
+                </a>
 
-        <a class="text-decoration-none text-white" href="mail:jeni1.shamailova1@gmail.com" target="_blank">
-          <i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right fs-3 mx-2"> </i>
-        </a>
-      </div>
-    </div>
-  </footer>
+                <a class="text-decoration-none text-white" href="mail:jeni1.shamailova1@gmail.com" target="_blank">
+                    <i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right fs-3 mx-2"> </i>
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
